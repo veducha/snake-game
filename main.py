@@ -73,6 +73,7 @@ class Game:
 		pygame.init()
 		self.surface = pygame.display.set_mode([c.HEIGHT, c.WIDTH])
 		self.surface.fill(c.BEIGE)
+		pygame.display.set_caption('Mini snake - veducha')
 
 		self.snake = Snake(self.surface, 3)
 		self.apple = Apple(self.surface)
